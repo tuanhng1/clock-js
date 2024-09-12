@@ -6,61 +6,15 @@
     
     <title>Clock</title>
     <!-- Làm đồng hồ hiển thị bằng js-->
-    <style>
-        * {
-           margin: 0;
-           padding: 0; 
-        }
-        .main {
-            display: flex;
-            align-items: center;;
-            justify-content: center;
-            height: 100vh;
-
-        }
-       .container-clock {
-         display: flex;
-         justify-content: center;
-         align-items: center;
-         background-color: rgb(0,0,0,0.4);
-         border-radius: 10px;
-            
-        }
-        .clock {
-            
-            width: 300px;
-            height: 120px;
-            font-size: 30px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-    </style>
-     
   </head>
   <body>
     <div class="main">
     <div class="container-clock">
       <div class="clock" id="clock">00:00</div>
-     
     </div>
 </div>
-
-    <script>
-      function updateClock() {
-       const currentDate = new Date();
-      const hours = currentDate.getHours();
-      const minutes = String(currentDate.getMinutes()).padStart(2, "0");
-      const senconds = String(currentDate.getSeconds()).padStart(2, "0");
-      console.log(currentDate);
-      const timeString = `${hours}: ${minutes}: ${senconds}`;
-      console.log(timeString);
-      document.getElementById("clock").innerHTML = timeString;
-
-      }
-      updateClock();
-      setInterval(updateClock,1000)
-
+    <script src="./main.js">
+      
     </script>
   </body>
 </html>

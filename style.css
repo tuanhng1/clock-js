@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0; 
+ }
+ .main {
+     display: flex;
+     align-items: center;;
+     justify-content: center;
+     height: 100vh;
+
+ }
+.container-clock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0,0,0,0.4);
+  border-radius: 10px;
+     
+ }
+ .clock {
+     
+     width: 300px;
+     height: 120px;
+     font-size: 30px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
